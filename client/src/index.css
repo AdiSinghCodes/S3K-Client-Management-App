@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+/* Utility Classes */
+.card {
+  @apply bg-white rounded-lg shadow-card hover:shadow-card-hover transition-shadow;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-dark;
+}
+
+.card-value {
+  @apply text-3xl font-bold text-dark;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-primary text-white rounded-lg font-medium hover:opacity-90 transition-opacity;
+}
+
+.btn-primary-lg {
+  @apply w-full px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-opacity text-center;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-secondary text-white rounded-lg font-medium hover:opacity-90 transition-opacity;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 text-dark hover:bg-light rounded-lg transition-colors cursor-pointer;
+}
+
+.sidebar-link.active {
+  @apply bg-light border-l-4 border-primary;
+}
+
+.progress-bar {
+  @apply h-2 bg-border rounded-full overflow-hidden;
+}
+
+.text-muted {
+  @apply text-gray-600 text-sm;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-xs font-semibold;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-danger {
+  @apply bg-red-100 text-red-800;
+}
+
+.badge-info {
+  @apply bg-blue-100 text-blue-800;
+}
