@@ -361,12 +361,12 @@ npm run build  # If configured
 ```
 NODE_ENV=development
 PORT=5000
-DB_USER=postgres
-DB_PASSWORD=sarita1602
+DB_USER=your_postgres
+DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=s3k_db
-DATABASE_URL=postgresql://postgres:sarita1602@localhost:5432/s3k_db
+DATABASE_URL=postgresql://postgres:password@localhost:5432/s3k_db
 JWT_SECRET=your-super-secret-jwt-key-change-in-production-12345
 JWT_EXPIRE=7d
 FRONTEND_URL=http://localhost:5173
@@ -410,38 +410,3 @@ psql -U postgres -d s3k_db -c "SELECT version();"
 - **Version:** 1.0.0
 - **Status:** ✅ Production Ready
 
----
-
-## 👥 Team
-
-- **Developer:** Aditya Singh
-- **Project:** S3K Tech.ai Client Management App
-
----
-
-## 📄 License
-
-© 2026 S3K Tech.ai. All rights reserved.
-
----
-
-## 🤝 Contributing
-
-1. Create a feature branch
-2. Commit changes
-3. Push to GitHub
-4. Create Pull Request
-
----
-
-## 📞 Support
-
-For issues or questions, please contact the development team or create an issue on GitHub.
-
----
-
-## 🎉 Thank You!
-
-Thank you for using S3K Client Management App. Happy coding! 🚀
-
-**Repository:** https://github.com/AdiSinghCodes/S3K-Client-Management-App
